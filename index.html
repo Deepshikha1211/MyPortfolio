@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepshikha - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <span class="loading-text">DS</span>
+                <div class="loading-ring"></div>
+            </div>
+            <div class="loading-progress">
+                <div class="loading-bar"></div>
+            </div>
+            <p class="loading-message">Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Enhanced Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-text">DS</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <div class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="mobile-menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Enhanced Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-greeting">
+                        <span class="greeting-line">Hello, I'm</span>
+                    </div>
+                    
+                    <h1 class="hero-name">
+                        <span class="name-part">Deep</span><span class="name-part">shikha</span>
+                    </h1>
+                    <div class="hero-subtitle">
+                        <div class="typing-container">
+                            <span class="typing-text"></span>
+                            <span class="cursor-blink">|</span>
+                        </div>
+                    </div>
+                    <div class="hero-description">
+                        <p>Passionate Full Stack Developer crafting digital experiences with modern technologies</p>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#contact" class="cta-button primary">
+                            <span class="btn-text">Get in Touch</span>
+                        </a>
+                        <a href="#projects" class="cta-button secondary">
+                            <span class="btn-text">View Projects</span>
+                        </a>
+                    </div>
+                    <!-- <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="15">0</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="2">0</span>
+                            <span class="stat-label">Years Learning</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="10">0</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image-container">
+                        <div class="floating-icons">
+                            <div class="floating-icon" data-tech="react"><i class="fab fa-react"></i></div>
+                            <div class="floating-icon" data-tech="node"><i class="fab fa-node-js"></i></div>
+                            <div class="floating-icon" data-tech="js"><i class="fab fa-js"></i></div>
+                            <div class="floating-icon" data-tech="python"><i class="fab fa-python"></i></div>
+                            <div class="floating-icon" data-tech="git"><i class="fab fa-git-alt"></i></div>
+                            <div class="floating-icon" data-tech="database"><i class="fas fa-database"></i></div>
+                        </div>
+                        <div class="hero-shape">
+                            <div class="shape-inner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <div class="scroll-text">Scroll Down</div>
+            </div>
+        </section>
+
+        <!-- Enhanced About Section -->
+        <section id="about" class="section" style="opacity: 1; transform: translateY(0);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Who I Am</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-container">
+                            <div class="profile-placeholder">
+                                <i class="fas fa-user"></i>
+                                 <img src="photo.jpg" alt="Profile Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <div class="about-intro">
+                            <p class="intro-text">I'm a passionate 3rd-year B.Tech student at Chitkara University, specializing in full-stack web development and data structures & algorithms. With a keen eye for detail and a love for problem-solving, I strive to create efficient, user-friendly applications that make a difference.</p>
+                            <p class="intro-text">My journey in tech began with a fascination for coding, which has now evolved into a deep-seated passion for creating innovative solutions. When I'm not coding, you can find me exploring new technologies, participating in hackathons, or mentoring junior developers.</p>
+                        </div>
+                        
+                        <div class="about-highlights">
+                            <!-- <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Clean Code</h4>
+                                    <p>Writing maintainable and scalable code</p>
+                                </div>
+                            </div> -->
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Problem Solving</h4>
+                                    <p>Creative solutions to complex challenges</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Team Player</h4>
+                                    <p>Collaborative development approach</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-buttons">
+                           <a href="assets/cv.pdf" class="button download-btn" download="Deepshikha_Resume.pdf">
+                          <i class="fas fa-download"></i>
+                          <span>Download CV</span>
+                          </a>
+                            <a href="#contact" class="button contact-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>Contact Me</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Skills Section -->
+        <section id="skills" class="section" style="opacity: 1; transform: translateY(0);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">What I Know</span>
+                    <h2 class="section-title">Skills & Technologies</h2>
+                </div>
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 class="category-title">Programming Languages</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Python</h4>
+                                    <div class="skill-level">
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-width="85"></div>
+                                        </div>
+                                        <span class="skill-percentage">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>C/C++</h4>
+                                    <div class="skill-level">
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-width="75"></div>
+                                        </div>
+                                        <span class="skill-percentage">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-java"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Java</h4>
+                                    <div class="skill-level">
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-width="70"></div>
+                                        </div>
+                                        <span class="skill-percentage">70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3 class="category-title">Web Development</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>HTML5</h4>
+                                    <div class="skill-level">
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-width="95"></div>
+                                        </div>
+                                        <span class="skill-percentage">95%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>CSS3</h4>
+                                    <div class="skill-level">
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-width="90"></div>
+                                        </div>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>JavaScript</h4>
+                                    <div class="skill-level">
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-width="85"></div>
+                                        </div>
+                                        <span class="skill-percentage">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>React</h4>
+                                    <div class="skill-level">
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-width="80"></div>
+                                        </div>
+                                        <span class="skill-percentage">80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3 class="category-title">Backend & Tools</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-node-js"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Node.js</h4>
+                                    <div class="skill-level">
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-width="75"></div>
+                                        </div>
+                                        <span class="skill-percentage">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>MongoDB</h4>
+                                    <div class="skill-level">
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-width="70"></div>
+                                        </div>
+                                        <span class="skill-percentage">70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fab fa-git-alt"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Git</h4>
+                                    <div class="skill-level">
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-width="85"></div>
+                                        </div>
+                                        <span class="skill-percentage">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Projects Section -->
+        <section id="projects" class="section" style="opacity: 1; transform: translateY(0);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">My Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+
+                <div class="project-container">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <!-- <i class="fas fa-comments"></i> -->
+                                 <img src="Chat.png" alt="Chatty Project Image">
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://chatapp-1-y3uh.onrender.com/login" class="project-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/Deepshikha1211/ChatApp" class="project-link" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-badge">Featured</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Chatty</h3>
+                                <div class="project-status">
+                                    <span class="status-dot"></span>
+                                    <span>Live</span>
+                                </div>
+                            </div>
+                            <p class="project-description">A real-time chat application built with the MERN stack, featuring instant messaging, user authentication, and media sharing capabilities.</p>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">Tailwind</span>
+                            </div>
+                            
+                            <div class="project-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Real-time messaging with Socket.io</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>JWT-based authentication</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Media sharing with Cloudinary</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Responsive design</span>
+                                </div>
+                            </div>
+                            
+                            <div class="project-buttons">
+                                <a href="https://chatapp-1-y3uh.onrender.com/login" class="btn-primary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/Deepshikha1211/ChatApp" class="btn-secondary" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <!-- <i class="fas fa-map-marked-alt"></i> -->
+                                 <img src="tripper.png" alt="Tripper Project Image">
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://trip-per-planner.netlify.app/" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/Deepshikha1211/Tripper" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-badge">New</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Tripper</h3>
+                                <div class="project-status">
+                                    <span class="status-dot"></span>
+                                    <span>Live</span>
+                                </div>
+                            </div>
+                            <p class="project-description">An interactive trip planning tool that helps users create, organize, and share their travel itineraries with integrated APIs and real-time features.</p>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">APIs</span>
+                                <span class="tech-tag">Maps</span>
+                            </div>
+                            
+                            <div class="project-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Interactive trip planning interface</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Firebase authentication & database</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Third-party API integrations</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Responsive and intuitive design</span>
+                                </div>
+                            </div>
+                            
+                            <div class="project-buttons">
+                                <a href="https://trip-per-planner.netlify.app/" class="btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/Deepshikha1211/Tripper" class="btn-secondary">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Experience Section -->
+        <section id="experience" class="section" style="opacity: 1; transform: translateY(0);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">My Journey</span>
+                    <h2 class="section-title">Experience & Education</h2>
+                </div>
+                <div class="timeline-container">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">
+                                <div class="dot-inner"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    <span>2023 - Present</span>
+                                </div>
+                                <div class="timeline-card">
+                                    <div class="card-header">
+                                        <div class="card-icon">
+                                            <i class="fas fa-graduation-cap"></i>
+                                        </div>
+                                        <div class="card-info">
+                                            <h3>B.Tech in Computer Science</h3>
+                                            <h4>Chitkara University</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <ul>
+                                            <li>Specializing in Full Stack Development with focus on MERN stack</li>
+                                            <li>Participated in multiple hackathons and coding competitions</li>
+                                            <li>Maintaining excellent academic performance</li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-skills">
+                                        <span class="skill-chip">Data Structures</span>
+                                        <span class="skill-chip">Algorithms</span>
+                                        <span class="skill-chip">Web Development</span>
+                                        <span class="skill-chip">Database Design</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Contact Section -->
+        <section id="contact" class="section" style="opacity: 1; transform: translateY(0);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Let's Connect</span>
+                    <h2 class="section-title">Get in Touch</h2>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-intro">
+                            <h3>Let's work together!</h3>
+                            <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out if you'd like to collaborate or just want to say hello!</p>
+                        </div>
+                        
+                        <div class="contact-cards">
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <p>deepshikha3056@gmail.com</p>
+                                    <a href="mailto:deepshikha3056@gmail.com" class="contact-link">Send Email</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Location</h4>
+                                    <p>Dera Bassi, Punjab, India</p>
+                                    <span class="contact-link">Available for Remote Work</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Response Time</h4>
+                                    <p>Usually within 24 hours</p>
+                                    <span class="contact-link">Quick Responder</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-section">
+                            <h4>Follow Me</h4>
+                            <div class="social-links">
+                                <a href="https://github.com/Deepshikha1211" class="social-link github" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="http://www.linkedin.com/in/deepshikha-1218302b1" class="social-link linkedin" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="social-link twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-header">
+                            <h3>Send a Message</h3>
+                            <p>I'll get back to you as soon as possible</p>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="name" id="name" required>
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" required>
+                                <label for="email">Your Email</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" name="subject" id="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea name="message" id="message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Enhanced Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <span class="logo-text">DS</span>
+                    <h3>Deepshikha</h3>
+                    <p>Full Stack Developer passionate about creating amazing digital experiences.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/Deepshikha1211" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="http://www.linkedin.com/in/deepshikha-1218302b1" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Frontend Design</a></li>
+                            <li><a href="#">Backend Development</a></li>
+                            <li><a href="#">API Integration</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:deepshikha3056@gmail.com">Email Me</a></li>
+                            <li><a href="#contact">Get in Touch</a></li>
+                            <li><a href="#">Schedule Call</a></li>
+                            <li><a href="#">Collaboration</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2024 Deepshikha. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> and lots of <i class="fas fa-coffee"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+        <div class="scroll-progress"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
